@@ -35,7 +35,7 @@ void loop()
 
 
           //Here we pass the sensor station ID
-          if (String(str).startsWith("S")) message_out = "{\"Readings\": {\"BaseStationID\": \"" + String(str) + "\"";
+          if (String(str).startsWith("S")) message_out = "{\"BaseStationID\": \"" + String(str) + "\"";
           
           //Here we add the temperature
           if (String(str).startsWith("T")) {
@@ -57,7 +57,7 @@ void loop()
           
           
     }
-    message_out += "}}"; //Close the JSON
+    message_out += "}"; //Close the JSON
     Serial.println(message_out);
 
     // Here is what we get from a sensor station - S01*H70.00*T27.10 
