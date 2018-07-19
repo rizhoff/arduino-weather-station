@@ -61,7 +61,7 @@ void loop()
     Serial.println(message_out);
 
     // Here is what we get from a sensor station - S01*H70.00*T27.10 
-    // And here is what we are sending to the web server - {"Readings": {"BaseStationID": "S01","Humidity": "70.00","Temperature": "27.10"}}
+    // And here is what we are sending to the web server - {"BaseStationID": "S01","Humidity": "70.00","Temperature": "27.10"}
    
   }
 }
